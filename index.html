@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js"></script>
+    <title>My Portfolio</title>
+</head>
+<body onload="run_observer()" class="body_style">
+    <nav class="navbar flex_center">
+        <div>
+            <img class="img_style element_nav" src="./public/logo.png">
+        </div>
+        <div onclick="show_elements()">
+            <img class="hamburguer_menu mobile_display" src="./public/menu.png" alt="">
+        </div>
+        <div class="nav_elements nav_elements_mobile">
+            <a href="/#skills" onclick="show_elements()" class="element_nav">Skills</a>
+            <a href="/#projects" onclick="show_elements()" class="margin_nav element_nav">Projects</a>
+            <a href="/#experience" onclick="show_elements()" class="element_nav">Experience and Contact</a>
+        </div>
+    </nav>
+    <div class="prop_container flex_center_col">
+        <header class="flex_center header_width direction_mobile">
+            <div class="position_avatar">
+                <div class="position_message">
+                    <p>Hello! I am <span class="purpule_txt">Vanessa Gonzalez</span></p>
+                    <img class="arrow_prop" src="./public/curve-arrow.png">
+                </div>
+                <div class="purpule_blur"></div>
+                <img class="avatar" src="./public/avatar.svg" alt="avatar">
+            </div>
+            <img class="avatar mobile_display" src="./public/avatar.svg" alt="avatar mobile">
+            <p class="header_greeting_mobile mobile_display">Hello! I am <span class="purpule_txt">Vanessa Gonzalez</span></p>
+            <h1>Front End Developer</h1>
+        </header>
+        <div class="about_container">
+            <h2 class="typewriter" name="id_title">My Path to Front-End Development</h2>
+            <p>For the past few years, I’ve been learning front-end development and building tools to make tasks more efficient. During my two years at IVisa as a QA Analyst, I’ve focused on creating automation processes to reduce manual effort.</p>
+        </div>
+        <div id="projects" class="project_container">
+            <div class="project_position">
+                <div class="description_position">
+                    <h3>Mx Travel website</h3>
+                    <div class="project_description">
+                        <p>Created a responsive travel agency platform using Vue.js and Tailwind CSS, designed to simplify the quote process and improve overall user experience.</p>
+                    </div>
+                    <div class="align_images">
+                        <a target="_blank" href="https://agenciamxtravel.com/">
+                            <img class="logo_container_github" src="./public/website.png" alt="website logo">
+                        </a>
+                        <a target="_blank" href="https://github.com/vane0912/MxTravel">
+                            <img class="logo_container_github top" src="./public/github.png" alt="github logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="image_position">
+                    <div class="project_blur"></div>
+                    <div class="project_img">
+                        <img class="website_img" src="./public/mx_travel.png" alt="mx travel site image">
+                    </div>
+                </div>
+            </div>
+            <div class="position_middle">
+                <div class="description_position_middle">
+                    <h3>Order Creation Automation</h3>
+                    <div class="project_description">
+                        <p>Developed an internal tool for my current role using Flask, Selenium, and Python to automate order creation. Leveraged APIs to retrieve data and capture evidence, streamlining workflows and enhancing team efficiency.</p>
+                    </div>
+                    <div class="align_images middle">
+                        <a target="_blank" href="https://github.com/vane0912/automations">
+                            <img class="logo_container_github" src="./public/github.png" alt="github logo">
+                        </a>
+                        <div class="tooltip_container info_image">
+                            <a>
+                                <img class="logo_container_github" src="./public/informacion.png" alt="information tooltip">
+                            </a>
+                            <div  class="info_tooltip middle_tooltip">
+                                <h5>Why can't i see this site live?</h5>
+                                <p class="tooltip_txt">This tool is available only locally, as it is an internal company resource. However, you can view a demo of its functionality 
+                                    <a target="_blank" href="https://drive.google.com/file/d/1drsqP-pghO2ejOMb61xD2dYwYSpuX53Q/view?usp=sharing">here</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image_position">
+                    <div class="project_blur"></div>
+                    <div class="project_img">
+                        <img class="website_img" src="./public/automator.png" alt="automation image project">
+                    </div>
+                </div>
+            </div>
+            <div class="project_position">
+                <div class="description_position">
+                    <h3>Agency scraper</h3>
+                    <div class="project_description">
+                        <p>Developed an automation tool for a travel agency using Node.js, Vue, Tailwind, and Puppeteer to automate price comparisons, reducing manual work and enhancing customer service focus.</p>
+                    </div>
+                    <div class="align_images">
+                        <div class="tooltip_container info_image">
+                            <a>
+                                <img class="logo_container_github" src="./public/informacion.png" alt="information tooltip">
+                            </a>
+                            <div class="info_tooltip normal_position">
+                                <h5>Why can't i see this site live?</h5>
+                                <p class="tooltip_txt">This tool is available only locally, as it is an internal company resource. However, you can view a demo of its functionality 
+                                    <a target="_blank" href="https://drive.google.com/file/d/1bKCmZFTyvKrNP2AxDV-qL7fP41XcOsJO/view?usp=sharing">here</a>.
+                                </p>
+                            </div>
+                        </div>
+                        <a target="_blank" href="https://github.com/vane0912/scraper-agency">
+                            <img class="logo_container_github" src="./public/github.png"  alt="github logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="image_position">
+                    <div class="project_blur"></div>
+                    <div class="project_img">
+                        <img class="website_img" src="./public/scraper.png" alt="scraper project image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="skills" class="skills_container">
+            <h4><span class="purpule_txt skills_span">Languages, Frameworks</span> and <span class="purpule_txt skills_span">Tools</span> I’ve Worked With </h4>
+            <div class="skills_logos">
+                <img class="logo" src="./public/css.svg" alt="css logo">
+                <img class="logo" src="./public/Js.png" alt="Js logo">
+                <img class="logo" src="./public/mongodb.png" alt="mongodb logo">
+                <img class="logo" src="./public/python.png" alt="python logo">
+                <img class="logo " src="./public/selenium.png" alt="selenium logo">
+                <img class="logo" src="./public/tailwind.png" alt="tailwind logo">
+                <img class="logo" src="./public/vue.png" alt="vue logo">
+                <img class="logo node" src="./public/nodejs.png" alt="nodejs logo">
+                <img class="logo puppeteer" src="./public/puppeteer.png" alt="puppeteer logo">
+                <img class="logo" src="./public/flask.png" alt="flask logo">
+                <img class="logo" src="./public/express.png" alt="express logo">
+            </div>
+        </div>
+        <div id="experience" class="about_container">
+            <h2>Experience</h2>
+            <p>QA Analyst | 2 Years Experience</p>
+            <p>Started as a Manual QA Analyst with no prior experience in testing, but I quickly learned the essentials. As I grew into the role, I used my programming skills to explore automation testing tools, allowing me to tackle more complex tasks and contribute to improving team workflows.</p>
+            <h4>Contact</h4>
+            <p>Email: vanessagpro5@gmail.com</p>
+            <p>Celphone: +52 614 141 3484</p>
+        </div>
+    </div>
+</body>
+</html>
