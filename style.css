@@ -420,6 +420,6 @@ p, span{
 }
 @media only screen and (max-width: 410px) {
     .info_tooltip{
-        width: 12rem;
+        width: 16rem;
     }
 }
