@@ -7,6 +7,9 @@ h1{
     font-weight:400;
     margin: 0;
 }
+a{
+    height: 2rem;
+}
 h2{
     font-size: 37px;
     color: #fff;
